@@ -64,7 +64,7 @@ namespace TouristObj
 			this.menuStrip1.Location = new System.Drawing.Point(0, 0);
 			this.menuStrip1.Name = "menuStrip1";
 			this.menuStrip1.Padding = new System.Windows.Forms.Padding(9, 3, 0, 3);
-			this.menuStrip1.Size = new System.Drawing.Size(2131, 48);
+			this.menuStrip1.Size = new System.Drawing.Size(2131, 42);
 			this.menuStrip1.TabIndex = 6;
 			this.menuStrip1.Text = "menuStrip1";
 			// 
@@ -242,6 +242,7 @@ namespace TouristObj
 			this.comboBox2.Name = "comboBox2";
 			this.comboBox2.Size = new System.Drawing.Size(98, 39);
 			this.comboBox2.TabIndex = 144;
+			this.comboBox2.Visible = false;
 			// 
 			// comboBox3
 			// 

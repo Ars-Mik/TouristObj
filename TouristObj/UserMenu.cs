@@ -119,12 +119,12 @@ namespace TouristObj
 				NpgsqlDataReader reader = cmd.ExecuteReader();
 				//adapter1 = new NpgsqlDataAdapter(cmd);
 				table1 = new DataTable();
-				table1.Columns.Add("ID_ТурОбъект"); //Убрать в релизе
+				table1.Columns.Add("id_ТурОбъект"); //Убрать в релизе
 				table1.Columns.Add("Название");
 				table1.Columns.Add("Адрес");
-				table1.Columns.Add("ID_ВидОбъекта");
+				table1.Columns.Add("id_ВидОбъекта");
 				table1.Columns.Add("Вид Объекта");
-				table1.Columns.Add("ID_Принадлежность");
+				table1.Columns.Add("id_Принадлежность");
 				table1.Columns.Add("Принадлежность");
 				table1.Columns.Add("Особенности_доступа");
 				table1.Columns.Add("Вместимость");
@@ -205,12 +205,12 @@ namespace TouristObj
 							cmd.Parameters.AddWithValue("@Название", textBox2.Text);
 							NpgsqlDataReader reader = cmd.ExecuteReader();
 							table1 = new DataTable();
-							table1.Columns.Add("ID_ТурОбъект"); //Убрать в релизе
+							table1.Columns.Add("id_ТурОбъект"); //Убрать в релизе
 							table1.Columns.Add("Название");
 							table1.Columns.Add("Адрес");
-							table1.Columns.Add("ID_ВидОбъекта");
+							table1.Columns.Add("id_ВидОбъекта");
 							table1.Columns.Add("Вид Объекта");
-							table1.Columns.Add("ID_Принадлежность");
+							table1.Columns.Add("id_Принадлежность");
 							table1.Columns.Add("Принадлежность");
 							table1.Columns.Add("Особенности_доступа");
 							table1.Columns.Add("Вместимость");
@@ -238,15 +238,6 @@ namespace TouristObj
 							dataGridView2.DataSource = table1;
 						}
 
-						//using (NpgsqlCommand cmd = new NpgsqlCommand("SELECT * FROM selTurNaz(@Название);", connection))
-						//{
-
-						//	cmd.CommandType = CommandType.Text;
-						//	cmd.Parameters.Clear();
-						//	cmd.Parameters.Add("@Название", NpgsqlTypes.NpgsqlDbType.Varchar).Value = textBox2.Text;
-						//	cmd.ExecuteScalar();
-						//}
-						//MessageBox.Show("Успешно!", "Поиск", MessageBoxButtons.OK, MessageBoxIcon.Information);
 					}
 
 					break; 
@@ -271,9 +262,9 @@ namespace TouristObj
 							table1.Columns.Add("№"); //Убрать в релизе
 							table1.Columns.Add("Название");
 							table1.Columns.Add("Адрес");
-							table1.Columns.Add("ID_ВидОбъекта");
+							table1.Columns.Add("id_ВидОбъекта");
 							table1.Columns.Add("Вид Объекта");
-							table1.Columns.Add("ID_Принадлежность");
+							table1.Columns.Add("id_Принадлежность");
 							table1.Columns.Add("Принадлежность");
 							table1.Columns.Add("Особенности_доступа");
 							table1.Columns.Add("Вместимость");
@@ -300,16 +291,6 @@ namespace TouristObj
 							reader.Close();
 							dataGridView2.DataSource = table1;
 						}
-
-						//using (NpgsqlCommand cmd = new NpgsqlCommand("SELECT * FROM selTurNaz(@Название);", connection))
-						//{
-
-						//	cmd.CommandType = CommandType.Text;
-						//	cmd.Parameters.Clear();
-						//	cmd.Parameters.Add("@Название", NpgsqlTypes.NpgsqlDbType.Varchar).Value = textBox2.Text;
-						//	cmd.ExecuteScalar();
-						//}
-						//MessageBox.Show("Успешно!", "Поиск", MessageBoxButtons.OK, MessageBoxIcon.Information);
 					}
 
 					break;
@@ -334,9 +315,9 @@ namespace TouristObj
 							table1.Columns.Add("№"); //Убрать в релизе
 							table1.Columns.Add("Название");
 							table1.Columns.Add("Адрес");
-							table1.Columns.Add("ID_ВидОбъекта");
+							table1.Columns.Add("id_ВидОбъекта");
 							table1.Columns.Add("Вид_Объекта");
-							table1.Columns.Add("ID_Принадлежность");
+							table1.Columns.Add("id_Принадлежность");
 							table1.Columns.Add("Принадлежность");
 							table1.Columns.Add("Особенности_доступа");
 							table1.Columns.Add("Вместимость");
@@ -363,16 +344,6 @@ namespace TouristObj
 							reader.Close();
 							dataGridView2.DataSource = table1;
 						}
-
-						//using (NpgsqlCommand cmd = new NpgsqlCommand("SELECT * FROM selTurNaz(@Название);", connection))
-						//{
-
-						//	cmd.CommandType = CommandType.Text;
-						//	cmd.Parameters.Clear();
-						//	cmd.Parameters.Add("@Название", NpgsqlTypes.NpgsqlDbType.Varchar).Value = textBox2.Text;
-						//	cmd.ExecuteScalar();
-						//}
-						//MessageBox.Show("Успешно!", "Поиск", MessageBoxButtons.OK, MessageBoxIcon.Information);
 					}
 
 					break;
@@ -397,9 +368,9 @@ namespace TouristObj
 							table1.Columns.Add("№"); //Убрать в релизе
 							table1.Columns.Add("Название");
 							table1.Columns.Add("Адрес");
-							table1.Columns.Add("ID_ВидОбъекта");
+							table1.Columns.Add("id_ВидОбъекта");
 							table1.Columns.Add("Вид_Объекта");
-							table1.Columns.Add("ID_Принадлежность");
+							table1.Columns.Add("id_Принадлежность");
 							table1.Columns.Add("Принадлежность");
 							table1.Columns.Add("Особенности_доступа");
 							table1.Columns.Add("Вместимость");
@@ -426,16 +397,6 @@ namespace TouristObj
 							reader.Close();
 							dataGridView2.DataSource = table1;
 						}
-
-						//using (NpgsqlCommand cmd = new NpgsqlCommand("SELECT * FROM selTurNaz(@Название);", connection))
-						//{
-
-						//	cmd.CommandType = CommandType.Text;
-						//	cmd.Parameters.Clear();
-						//	cmd.Parameters.Add("@Название", NpgsqlTypes.NpgsqlDbType.Varchar).Value = textBox2.Text;
-						//	cmd.ExecuteScalar();
-						//}
-						//MessageBox.Show("Успешно!", "Поиск", MessageBoxButtons.OK, MessageBoxIcon.Information);
 					}
 
 					break;
@@ -460,9 +421,9 @@ namespace TouristObj
 							table1.Columns.Add("№"); //Убрать в релизе
 							table1.Columns.Add("Название");
 							table1.Columns.Add("Адрес");
-							table1.Columns.Add("ID_ВидОбъекта");
+							table1.Columns.Add("id_ВидОбъекта");
 							table1.Columns.Add("Вид Объекта");
-							table1.Columns.Add("ID_Принадлежность");
+							table1.Columns.Add("id_Принадлежность");
 							table1.Columns.Add("Принадлежность");
 							table1.Columns.Add("Особенности_доступа");
 							table1.Columns.Add("Вместимость");
@@ -527,13 +488,6 @@ namespace TouristObj
 			textBox2.Clear();
 			comboBox3.Text = "  -- Выберите --";
 
-
-			//comboBox1.Text = (sender as ComboBox).SelectedItem.ToString();
-
-			//if (comboBox1.Text == (sender as ComboBox).SelectedItem.ToString())
-			//{
-			//	comboBox2.SelectedIndex = comboBox1.SelectedIndex;
-			//}
 		}
 
 		private void textBox1_TextChanged(object sender, EventArgs e)
@@ -561,9 +515,9 @@ namespace TouristObj
 				table1.Columns.Add("№т"); //Убрать в релизе
 				table1.Columns.Add("Название");
 				table1.Columns.Add("Адрес");
-				table1.Columns.Add("ID_ВидОбъекта");
+				table1.Columns.Add("id_ВидОбъекта");
 				table1.Columns.Add("Вид Объекта");
-				table1.Columns.Add("ID_Принадлежность");
+				table1.Columns.Add("id_Принадлежность");
 				table1.Columns.Add("Принадлежность");
 				table1.Columns.Add("Особенности_доступа");
 				table1.Columns.Add("Вместимость");
@@ -653,9 +607,9 @@ namespace TouristObj
                 table1.Columns.Add("№"); //Убрать в релизе
                 table1.Columns.Add("Название");
                 table1.Columns.Add("Адрес");
-                table1.Columns.Add("ID_ВидОбъекта");
+                table1.Columns.Add("id_ВидОбъекта");
 				table1.Columns.Add("Вид Объекта");
-				table1.Columns.Add("ID_Принадлежность");
+				table1.Columns.Add("id_Принадлежность");
 				table1.Columns.Add("Принадлежность");
 				table1.Columns.Add("Особенности_доступа");
                 table1.Columns.Add("Вместимость");
